@@ -59,4 +59,4 @@ The build creates `dist/StartNewTab.zip`.
 
 ## License
 
-MIT - Copyright (c) 2023 Chang Jun
+GPL-3.0-only - Copyright (c) 2023 Chang Jun
