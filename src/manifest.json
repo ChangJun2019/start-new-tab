@@ -4,7 +4,7 @@
   "short_name": "Start",
   "description": "A clean, simple, new tab browser extension that supports local image backgrounds",
   "version": "0.0.3",
-  "homepage_url": "https://github.com/ChangJun2019/sbg-new-tab",
+  "homepage_url": "https://github.com/ChangJun2019/start-new-tab",
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
