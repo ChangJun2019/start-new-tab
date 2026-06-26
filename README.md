@@ -1,6 +1,6 @@
-<h1 align="center">Start - A Clean New Tab</h1>
+<h1 align="center">Start New Tab</h1>
 
-<p align="center">A clean, simple new tab browser extension that supports local image backgrounds.</p>
+<p align="center">A clean, private new tab for your local wallpaper.</p>
 <p align="center">
   <a href="https://chrome.google.com/webstore/detail/dlofaadadkacecikehaefpgdahbgdmen" alt="downloads extension">
     <img src="https://img.shields.io/badge/downloads-00dd83" alt="downloads extension"></img>
@@ -10,14 +10,32 @@
 ## Features
 
 - Replace Chrome's default new tab page with a quiet local page.
-- Use a local image as the wallpaper.
+- Choose a local image as your wallpaper.
 - Change or clear the wallpaper from a small corner menu.
 - Store wallpaper data locally with IndexedDB.
 - Request no Chrome extension permissions.
 
 ## Privacy
 
-Start keeps the new tab local and private. It does not use accounts, cloud sync, analytics, remote wallpapers, network requests, `permissions`, or `host_permissions`.
+Start New Tab keeps your new tab local and private. It does not use accounts, cloud sync, analytics, remote wallpapers, network requests, `permissions`, or `host_permissions`.
+
+## Chrome Web Store Copy
+
+Short description:
+
+```text
+A clean, private new tab for your local wallpaper.
+```
+
+Detailed description:
+
+```text
+Start New Tab replaces Chrome's default new tab page with a quiet local wallpaper page.
+
+Choose an image from your computer, keep it stored locally, and use the small corner menu whenever you want to change or clear it. The page stays intentionally minimal so your wallpaper can be the focus.
+
+Privacy is the default: Start New Tab does not use accounts, cloud sync, analytics, remote wallpapers, network requests, or extra Chrome extension permissions.
+```
 
 ## Development
 

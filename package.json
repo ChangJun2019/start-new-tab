@@ -3,18 +3,21 @@
   "type": "module",
   "version": "0.0.3",
   "packageManager": "pnpm@11.9.0",
-  "description": "A clean, simple, new tab browser extension that supports local image backgrounds",
+  "description": "A clean, private new tab for your local wallpaper.",
   "author": {
     "name": "Chang Jun",
     "email": "52chinaweb@gmail.com",
     "url": "https://52chinaweb.com/"
   },
   "license": "GPL-3.0-only",
-  "homepage": "https://github.com/ChangJun2019/sbg-new-tab",
+  "homepage": "https://github.com/ChangJun2019/start-new-tab",
   "keywords": [
+    "new-tab",
     "newtab",
     "chrome",
-    "extension"
+    "extension",
+    "wallpaper",
+    "privacy"
   ],
   "scripts": {
     "build": "node ./scripts/build.mjs",

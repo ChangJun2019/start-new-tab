@@ -1,6 +1,6 @@
 # Start New Tab
 
-Start New Tab is a minimal Chrome extension that replaces the default new tab page with a clean local wallpaper page.
+Start New Tab is a minimal Chrome extension that replaces the default new tab page with a clean, private local wallpaper page.
 
 ## Features
 

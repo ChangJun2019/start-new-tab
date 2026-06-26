@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Start - A Clean New Tab",
-  "short_name": "Start",
-  "description": "A clean, simple, new tab browser extension that supports local image backgrounds",
+  "name": "Start New Tab",
+  "short_name": "Start Tab",
+  "description": "A clean, private new tab for your local wallpaper.",
   "version": "0.0.3",
   "homepage_url": "https://github.com/ChangJun2019/start-new-tab",
   "chrome_url_overrides": {
