@@ -5,9 +5,9 @@
   "packageManager": "pnpm@11.9.0",
   "description": "A clean, private new tab for your local wallpaper.",
   "author": {
-    "name": "Chang Jun",
+    "name": "Jun Chang",
     "email": "52chinaweb@gmail.com",
-    "url": "https://52chinaweb.com/"
+    "url": "https://www.changjun.me/"
   },
   "license": "GPL-3.0-only",
   "homepage": "https://github.com/ChangJun2019/start-new-tab",
