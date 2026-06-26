@@ -160,20 +160,27 @@ function toggleMenu() {
 function openMenu() {
   window.clearTimeout(menuTransitionTimer)
   actionMenu.hidden = false
-  actionMenu.setAttribute('aria-hidden', 'false')
+  actionMenu.toggleAttribute('inert', false)
   menuTrigger.setAttribute('aria-expanded', 'true')
   window.requestAnimationFrame(() => {
     actionMenu.classList.add('is-open')
   })
 }
 
-function closeMenu() {
-  if (actionMenu.hidden)
+function closeMenu({ restoreFocus = false } = {}) {
+  if (actionMenu.hidden) {
+    if (restoreFocus)
+      menuTrigger.focus()
+
     return
+  }
+
+  if (restoreFocus || actionMenu.contains(document.activeElement))
+    menuTrigger.focus()
 
   window.clearTimeout(menuTransitionTimer)
   actionMenu.classList.remove('is-open')
-  actionMenu.setAttribute('aria-hidden', 'true')
+  actionMenu.toggleAttribute('inert', true)
   menuTrigger.setAttribute('aria-expanded', 'false')
 
   menuTransitionTimer = window.setTimeout(() => {
@@ -188,13 +195,12 @@ function handleDocumentClick(event) {
 
 function handleDocumentKeydown(event) {
   if (event.key === 'Escape') {
-    closeMenu()
-    menuTrigger.focus()
+    closeMenu({ restoreFocus: true })
   }
 }
 
 function chooseWallpaper() {
-  closeMenu()
+  closeMenu({ restoreFocus: true })
   wallpaperInput.value = ''
   wallpaperInput.click()
 }
@@ -223,8 +229,7 @@ async function clearWallpaper() {
   try {
     await removeWallpaper()
     clearAppliedWallpaper()
-    closeMenu()
-    menuTrigger.focus()
+    closeMenu({ restoreFocus: true })
     showToast('Image cleared.')
   }
   catch {
