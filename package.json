@@ -2,7 +2,7 @@
   "name": "start-new-tab",
   "type": "module",
   "version": "0.0.3",
-  "packageManager": "pnpm@8.8.0",
+  "packageManager": "pnpm@11.9.0",
   "description": "A clean, simple, new tab browser extension that supports local image backgrounds",
   "author": {
     "name": "Chang Jun",
@@ -17,24 +17,15 @@
     "extension"
   ],
   "scripts": {
-    "dev": "unocss --watch",
-    "build": "unocss --minify && esno ./scripts/build",
+    "build": "node ./scripts/build.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "upgrade": "npx taze major -w",
     "release": "bumpp --commit --tag --push"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "1.0.0-beta.21",
-    "@unocss/cli": "^0.56.5",
-    "bumpp": "^9.2.0",
-    "compressing": "^1.10.0",
-    "consola": "^3.2.3",
-    "eslint": "^8.50.0",
-    "esno": "^0.17.0",
-    "mkdirp": "^3.0.1",
-    "rimraf": "^5.0.5",
-    "typescript": "^5.2.2",
-    "unocss": "^0.56.5"
+    "@antfu/eslint-config": "^9.1.0",
+    "bumpp": "^11.1.0",
+    "compressing": "^2.1.1",
+    "eslint": "^10.5.0"
   }
 }
