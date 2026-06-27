@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, rmSync } from 'node:fs'
+import { cpSync, mkdirSync, readFileSync, rmSync } from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
@@ -8,6 +8,7 @@ const FILE_NAME = 'StartNewTab'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const targetDir = path.join(__dirname, '../dist')
+const packageDir = path.join(targetDir, 'package')
 const target = path.join(targetDir, `${FILE_NAME}.zip`)
 const source = path.join(__dirname, '../src')
 const packageJsonPath = path.join(__dirname, '../package.json')
@@ -17,7 +18,12 @@ async function build() {
   assertManifestVersion()
   rmSync(targetDir, { recursive: true, force: true })
   mkdirSync(targetDir, { recursive: true })
-  await compressing.zip.compressDir(source, target, { ignoreBase: true })
+  cpSync(source, packageDir, {
+    recursive: true,
+    filter: sourcePath => !path.basename(sourcePath).startsWith('.DS_'),
+  })
+  await compressing.zip.compressDir(packageDir, target, { ignoreBase: true })
+  rmSync(packageDir, { recursive: true, force: true })
 }
 
 function assertManifestVersion() {
