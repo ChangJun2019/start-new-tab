@@ -6,6 +6,9 @@
     <img src="https://img.shields.io/badge/downloads-00dd83" alt="downloads extension"></img>
   </a>
 </p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ChangJun2019/start-new-tab/main/preview.png" alt="Start New Tab preview" width="960">
+</p>
 
 ## Features
 
