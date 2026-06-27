@@ -1,7 +1,7 @@
 {
   "name": "start-new-tab",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "packageManager": "pnpm@11.9.0",
   "description": "A clean, private new tab for your local wallpaper.",
   "author": {

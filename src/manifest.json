@@ -3,7 +3,7 @@
   "name": "Start New Tab",
   "short_name": "Start Tab",
   "description": "A clean, private new tab for your local wallpaper.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage_url": "https://github.com/ChangJun2019/start-new-tab",
   "chrome_url_overrides": {
     "newtab": "newtab.html"
